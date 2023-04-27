@@ -60,12 +60,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property pimage (base name: "pimage")', function() {
-      // uncomment below and update the code to test the property pimage
-      //var instance = new TempApi.Product();
-      //expect(instance).to.be();
-    });
-
     it('should have the property ptitle (base name: "ptitle")', function() {
       // uncomment below and update the code to test the property ptitle
       //var instance = new TempApi.Product();

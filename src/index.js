@@ -14,7 +14,6 @@
 
 import ApiClient from './ApiClient';
 import Product from './model/Product';
-import ProductPimage from './model/ProductPimage';
 import ProductApi from './api/ProductApi';
 
 
@@ -63,12 +62,6 @@ export {
     Product,
 
     /**
-     * The ProductPimage model constructor.
-     * @property {module:model/ProductPimage}
-     */
-    ProductPimage,
-
-    /**
     * The ProductApi service constructor.
     * @property {module:api/ProductApi}
     */
@@ -87,12 +80,6 @@ export default {
      * @property {module:model/Product}
      */
     Product,
-
-    /**
-     * The ProductPimage model constructor.
-     * @property {module:model/ProductPimage}
-     */
-    ProductPimage,
 
     /**
     * The ProductApi service constructor.

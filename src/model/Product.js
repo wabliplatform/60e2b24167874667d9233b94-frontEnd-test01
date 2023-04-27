@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductPimage from './ProductPimage';
 
 /**
  * The Product model module.
@@ -23,12 +22,11 @@ class Product {
     /**
      * Constructs a new <code>Product</code>.
      * @alias module:model/Product
-     * @param pimage {module:model/ProductPimage} 
      * @param ptitle {String} 
      */
-    constructor(pimage, ptitle) { 
+    constructor(ptitle) { 
         
-        Product.initialize(this, pimage, ptitle);
+        Product.initialize(this, ptitle);
     }
 
     /**
@@ -36,8 +34,7 @@ class Product {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, pimage, ptitle) { 
-        obj['pimage'] = pimage;
+    static initialize(obj, ptitle) { 
         obj['ptitle'] = ptitle;
     }
 
@@ -55,9 +52,6 @@ class Product {
             if (data.hasOwnProperty('_id')) {
                 obj['_id'] = ApiClient.convertToType(data['_id'], 'String');
             }
-            if (data.hasOwnProperty('pimage')) {
-                obj['pimage'] = ProductPimage.constructFromObject(data['pimage']);
-            }
             if (data.hasOwnProperty('ptitle')) {
                 obj['ptitle'] = ApiClient.convertToType(data['ptitle'], 'String');
             }
@@ -72,11 +66,6 @@ class Product {
  * @member {String} _id
  */
 Product.prototype['_id'] = undefined;
-
-/**
- * @member {module:model/ProductPimage} pimage
- */
-Product.prototype['pimage'] = undefined;
 
 /**
  * @member {String} ptitle

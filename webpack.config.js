@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-	'home' : './javascript/home.js',
-	'insert' : './javascript/insert.js',
+	'Page1' : './javascript/Page1.js',
 },
   output: {
     path: path.resolve(__dirname, 'dist'),
