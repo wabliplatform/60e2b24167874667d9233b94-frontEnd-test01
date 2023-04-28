@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
-**ptitle** | **String** |  | 
+**pd** | **String** |  | 
 
 

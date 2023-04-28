@@ -22,11 +22,11 @@ class Product {
     /**
      * Constructs a new <code>Product</code>.
      * @alias module:model/Product
-     * @param ptitle {String} 
+     * @param pd {String} 
      */
-    constructor(ptitle) { 
+    constructor(pd) { 
         
-        Product.initialize(this, ptitle);
+        Product.initialize(this, pd);
     }
 
     /**
@@ -34,8 +34,8 @@ class Product {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, ptitle) { 
-        obj['ptitle'] = ptitle;
+    static initialize(obj, pd) { 
+        obj['pd'] = pd;
     }
 
     /**
@@ -52,8 +52,8 @@ class Product {
             if (data.hasOwnProperty('_id')) {
                 obj['_id'] = ApiClient.convertToType(data['_id'], 'String');
             }
-            if (data.hasOwnProperty('ptitle')) {
-                obj['ptitle'] = ApiClient.convertToType(data['ptitle'], 'String');
+            if (data.hasOwnProperty('pd')) {
+                obj['pd'] = ApiClient.convertToType(data['pd'], 'String');
             }
         }
         return obj;
@@ -68,9 +68,9 @@ class Product {
 Product.prototype['_id'] = undefined;
 
 /**
- * @member {String} ptitle
+ * @member {String} pd
  */
-Product.prototype['ptitle'] = undefined;
+Product.prototype['pd'] = undefined;
 
 
 

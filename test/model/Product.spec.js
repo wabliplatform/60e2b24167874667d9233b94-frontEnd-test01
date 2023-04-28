@@ -60,8 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property ptitle (base name: "ptitle")', function() {
-      // uncomment below and update the code to test the property ptitle
+    it('should have the property pd (base name: "pd")', function() {
+      // uncomment below and update the code to test the property pd
       //var instance = new TempApi.Product();
       //expect(instance).to.be();
     });
